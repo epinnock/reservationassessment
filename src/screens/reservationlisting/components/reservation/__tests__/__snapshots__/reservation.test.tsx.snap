@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reservation renders  1`] = `
+<Reservation
+  reservation={
+    Object {
+      "__typename": "Reservation",
+      "arrivalDate": "01/01/2000",
+      "departureDate": "01/02/2000",
+      "hotelName": "Hilton",
+      "id": 1,
+      "name": "Conrad",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "borderRadius": 6,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginHorizontal": 5,
+        "marginVertical": 3,
+        "paddingHorizontal": 5,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#fff",
+          "borderRadius": 6,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginHorizontal": 5,
+          "marginVertical": 3,
+          "paddingHorizontal": 5,
+          "paddingVertical": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flexDirection": "column",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flexDirection": "column",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 22,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "fontSize": 22,
+                }
+              }
+            >
+              Conrad
+            </Text>
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#CCCCCC",
+                "fontSize": 16,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#CCCCCC",
+                  "fontSize": 16,
+                }
+              }
+            >
+              Hilton
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-end",
+            "flexDirection": "row",
+            "justifyContent": "flex-end",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "flexDirection": "row",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#FF9900",
+                "fontSize": 12,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FF9900",
+                  "fontSize": 12,
+                }
+              }
+            >
+              01/01/2000 - 01/02/2000
+            </Text>
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</Reservation>
+`;
