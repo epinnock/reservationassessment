@@ -2,12 +2,14 @@ import ApolloClient from "apollo-boost";
 import { endpoint } from './constants'
 import { Component } from "react";
 import React from "react";
-import ReservationListings from './screens/resverationlistings'
 import { ApolloProvider } from "react-apollo";
 import AppNavigator from "./AppNavigator";
+import defaults from './screens/reservationentry/graphql/default'
+import resolvers from './graphql/resolvers'
 const client = new ApolloClient({
     uri: endpoint,
-    clientState: {}
+    clientState: { defaults, resolvers },
+
 });
 
 

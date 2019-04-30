@@ -1,12 +1,12 @@
-import { graphql, DataValue } from 'react-apollo'
+import { graphql, DataValue, ChildDataProps } from 'react-apollo'
 import { FETCH_NEW_RESERVATION_QUERY } from '../query/fetchNewReservation'
 import { fetchNewReservationQuery } from '../query/types/fetchNewReservationQuery'
 
 type Response = fetchNewReservationQuery;
 
 
-export type withNewReservationQueryProps = { fetchNewReservationQuery: DataValue<Response, {}> }
+export type withNewReservationQueryProps = { newReservationQuery: DataValue<Response, {}> }
 
-export default graphql<{}, Response, {}, withNewReservationQueryProps>(FETCH_NEW_RESERVATION_QUERY, {
-    name: 'fetchNewReservationQuery',
+export default graphql<any, Response, {}, withNewReservationQueryProps>(FETCH_NEW_RESERVATION_QUERY, {
+    name: 'newReservationQuery',
 })

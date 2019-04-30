@@ -1,6 +1,6 @@
 import gql from 'graphql-tag'
 
-export const typedef = gql`
+export const typeDefs = gql`
     input NewReservationUpdateInput{
         id:String!
         name:String!

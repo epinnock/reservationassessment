@@ -1,0 +1,2258 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReservationEnry tests calls updateNewReservationMutation 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "variables": Object {
+          "data": Object {
+            "arrivalDate": "",
+            "departureDate": "",
+            "hotelName": "",
+            "id": "",
+            "name": "name",
+          },
+        },
+      },
+    ],
+    Array [
+      Object {
+        "variables": Object {
+          "data": Object {
+            "arrivalDate": "",
+            "departureDate": "",
+            "hotelName": "hotel-name",
+            "id": "",
+            "name": "",
+          },
+        },
+      },
+    ],
+    Array [
+      Object {
+        "variables": Object {
+          "data": Object {
+            "arrivalDate": "2/2/2019",
+            "departureDate": "",
+            "hotelName": "",
+            "id": "",
+            "name": "",
+          },
+        },
+      },
+    ],
+    Array [
+      Object {
+        "variables": Object {
+          "data": Object {
+            "arrivalDate": "",
+            "departureDate": "2/3/2019",
+            "hotelName": "",
+            "id": "",
+            "name": "",
+          },
+        },
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
+
+exports[`ReservationEnry tests renders conrrectly 1`] = `
+<ReservationEntry
+  createReservation={[MockFunction]}
+  navigation={Object {}}
+  newReservationQuery={
+    Object {
+      "fetchMore": [MockFunction],
+      "fetchNewReservation": Object {
+        "__typename": "NewReservation",
+        "arrivalDate": "",
+        "departureDate": "",
+        "hotelName": "",
+        "id": "",
+        "name": "",
+      },
+      "loading": false,
+      "networkStatus": 7,
+      "refetch": [MockFunction],
+      "startPolling": [MockFunction],
+      "stopPolling": [MockFunction],
+      "subscribeToMore": [MockFunction],
+      "updateQuery": [MockFunction],
+      "variables": Object {},
+    }
+  }
+  updateNewReservationMutation={[MockFunction]}
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+        "paddingHorizontal": 10,
+        "paddingVertical": 200,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+          "paddingHorizontal": 10,
+          "paddingVertical": 200,
+        }
+      }
+    >
+      <ForwardRef(Themed.Input)
+        autoCapitalize="none"
+        autoCorrect={false}
+        autoFocus={false}
+        containerStyle={
+          Object {
+            "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+          }
+        }
+        inputStyle={
+          Object {
+            "marginHorizontal": 20,
+          }
+        }
+        keyboardAppearance="light"
+        leftIcon={
+          <Themed.Icon
+            color="rgba(0, 0, 0, 0.38)"
+            name="user"
+            size={25}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+              }
+            }
+            type="font-awesome"
+          />
+        }
+        onChangeText={[Function]}
+        placeholder="Name"
+        returnKeyType="next"
+        value=""
+      >
+        <ThemedComponent
+          autoCapitalize="none"
+          autoCorrect={false}
+          autoFocus={false}
+          containerStyle={
+            Object {
+              "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+            }
+          }
+          forwardedRef={null}
+          inputStyle={
+            Object {
+              "marginHorizontal": 20,
+            }
+          }
+          keyboardAppearance="light"
+          leftIcon={
+            <Themed.Icon
+              color="rgba(0, 0, 0, 0.38)"
+              name="user"
+              size={25}
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                }
+              }
+              type="font-awesome"
+            />
+          }
+          onChangeText={[Function]}
+          placeholder="Name"
+          returnKeyType="next"
+          value=""
+        >
+          <Input
+            autoCapitalize="none"
+            autoCorrect={false}
+            autoFocus={false}
+            containerStyle={
+              Object {
+                "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+              }
+            }
+            inputStyle={
+              Object {
+                "marginHorizontal": 20,
+              }
+            }
+            keyboardAppearance="light"
+            leftIcon={
+              <Themed.Icon
+                color="rgba(0, 0, 0, 0.38)"
+                name="user"
+                size={25}
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                  }
+                }
+                type="font-awesome"
+              />
+            }
+            onChangeText={[Function]}
+            placeholder="Name"
+            returnKeyType="next"
+            theme={
+              Object {
+                "colors": Object {
+                  "disabled": "hsl(208, 8%, 90%)",
+                  "divider": "#bcbbc1",
+                  "error": "#ff190c",
+                  "grey0": "#393e42",
+                  "grey1": "#43484d",
+                  "grey2": "#5e6977",
+                  "grey3": "#86939e",
+                  "grey4": "#bdc6cf",
+                  "grey5": "#e1e8ee",
+                  "greyOutline": "#bbb",
+                  "platform": Object {
+                    "android": Object {
+                      "error": "#f44336",
+                      "primary": "#2196f3",
+                      "secondary": "#9C27B0",
+                      "success": "#4caf50",
+                      "warning": "#ffeb3b",
+                    },
+                    "ios": Object {
+                      "error": "#ff3b30",
+                      "primary": "#007aff",
+                      "secondary": "#5856d6",
+                      "success": "#4cd964",
+                      "warning": "#ffcc00",
+                    },
+                  },
+                  "primary": "#2089dc",
+                  "searchBg": "#303337",
+                  "secondary": "#8F0CE8",
+                  "success": "#52c41a",
+                  "warning": "#faad14",
+                },
+              }
+            }
+            value=""
+          >
+            <View
+              style={
+                Object {
+                  "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+                  "paddingHorizontal": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+                    "paddingHorizontal": 10,
+                    "width": "100%",
+                  }
+                }
+              >
+                <AnimatedComponent
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "borderBottomWidth": 1,
+                      "borderColor": "#86939e",
+                      "flexDirection": "row",
+                      "transform": Array [
+                        Object {
+                          "translateX": 0,
+                        },
+                      ],
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "borderBottomWidth": 1,
+                        "borderColor": "#86939e",
+                        "flexDirection": "row",
+                        "transform": Array [
+                          Object {
+                            "translateX": 0,
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "borderBottomWidth": 1,
+                          "borderColor": "#86939e",
+                          "flexDirection": "row",
+                          "transform": Array [
+                            Object {
+                              "translateX": 0,
+                            },
+                          ],
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "height": 40,
+                            "justifyContent": "center",
+                            "marginLeft": 15,
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            Object {
+                              "alignItems": "center",
+                              "height": 40,
+                              "justifyContent": "center",
+                              "marginLeft": 15,
+                            }
+                          }
+                        >
+                          <Themed.Icon
+                            color="rgba(0, 0, 0, 0.38)"
+                            name="user"
+                            size={25}
+                            style={
+                              Object {
+                                "backgroundColor": "transparent",
+                              }
+                            }
+                            type="font-awesome"
+                          >
+                            <Icon
+                              color="rgba(0, 0, 0, 0.38)"
+                              disabled={false}
+                              name="user"
+                              raised={false}
+                              reverse={false}
+                              reverseColor="white"
+                              size={25}
+                              style={
+                                Object {
+                                  "backgroundColor": "transparent",
+                                }
+                              }
+                              theme={
+                                Object {
+                                  "colors": Object {
+                                    "disabled": "hsl(208, 8%, 90%)",
+                                    "divider": "#bcbbc1",
+                                    "error": "#ff190c",
+                                    "grey0": "#393e42",
+                                    "grey1": "#43484d",
+                                    "grey2": "#5e6977",
+                                    "grey3": "#86939e",
+                                    "grey4": "#bdc6cf",
+                                    "grey5": "#e1e8ee",
+                                    "greyOutline": "#bbb",
+                                    "platform": Object {
+                                      "android": Object {
+                                        "error": "#f44336",
+                                        "primary": "#2196f3",
+                                        "secondary": "#9C27B0",
+                                        "success": "#4caf50",
+                                        "warning": "#ffeb3b",
+                                      },
+                                      "ios": Object {
+                                        "error": "#ff3b30",
+                                        "primary": "#007aff",
+                                        "secondary": "#5856d6",
+                                        "success": "#4cd964",
+                                        "warning": "#ffcc00",
+                                      },
+                                    },
+                                    "primary": "#2089dc",
+                                    "searchBg": "#303337",
+                                    "secondary": "#8F0CE8",
+                                    "success": "#52c41a",
+                                    "warning": "#faad14",
+                                  },
+                                }
+                              }
+                              type="font-awesome"
+                              underlayColor="white"
+                            >
+                              <View>
+                                <View>
+                                  <View
+                                    style={
+                                      Object {
+                                        "alignItems": "center",
+                                        "backgroundColor": "transparent",
+                                        "justifyContent": "center",
+                                      }
+                                    }
+                                    theme={
+                                      Object {
+                                        "colors": Object {
+                                          "disabled": "hsl(208, 8%, 90%)",
+                                          "divider": "#bcbbc1",
+                                          "error": "#ff190c",
+                                          "grey0": "#393e42",
+                                          "grey1": "#43484d",
+                                          "grey2": "#5e6977",
+                                          "grey3": "#86939e",
+                                          "grey4": "#bdc6cf",
+                                          "grey5": "#e1e8ee",
+                                          "greyOutline": "#bbb",
+                                          "platform": Object {
+                                            "android": Object {
+                                              "error": "#f44336",
+                                              "primary": "#2196f3",
+                                              "secondary": "#9C27B0",
+                                              "success": "#4caf50",
+                                              "warning": "#ffeb3b",
+                                            },
+                                            "ios": Object {
+                                              "error": "#ff3b30",
+                                              "primary": "#007aff",
+                                              "secondary": "#5856d6",
+                                              "success": "#4cd964",
+                                              "warning": "#ffcc00",
+                                            },
+                                          },
+                                          "primary": "#2089dc",
+                                          "searchBg": "#303337",
+                                          "secondary": "#8F0CE8",
+                                          "success": "#52c41a",
+                                          "warning": "#faad14",
+                                        },
+                                      }
+                                    }
+                                    underlayColor="white"
+                                  >
+                                    <View
+                                      style={
+                                        Object {
+                                          "alignItems": "center",
+                                          "backgroundColor": "transparent",
+                                          "justifyContent": "center",
+                                        }
+                                      }
+                                      theme={
+                                        Object {
+                                          "colors": Object {
+                                            "disabled": "hsl(208, 8%, 90%)",
+                                            "divider": "#bcbbc1",
+                                            "error": "#ff190c",
+                                            "grey0": "#393e42",
+                                            "grey1": "#43484d",
+                                            "grey2": "#5e6977",
+                                            "grey3": "#86939e",
+                                            "grey4": "#bdc6cf",
+                                            "grey5": "#e1e8ee",
+                                            "greyOutline": "#bbb",
+                                            "platform": Object {
+                                              "android": Object {
+                                                "error": "#f44336",
+                                                "primary": "#2196f3",
+                                                "secondary": "#9C27B0",
+                                                "success": "#4caf50",
+                                                "warning": "#ffeb3b",
+                                              },
+                                              "ios": Object {
+                                                "error": "#ff3b30",
+                                                "primary": "#007aff",
+                                                "secondary": "#5856d6",
+                                                "success": "#4cd964",
+                                                "warning": "#ffcc00",
+                                              },
+                                            },
+                                            "primary": "#2089dc",
+                                            "searchBg": "#303337",
+                                            "secondary": "#8F0CE8",
+                                            "success": "#52c41a",
+                                            "warning": "#faad14",
+                                          },
+                                        }
+                                      }
+                                      underlayColor="white"
+                                    >
+                                      <Icon
+                                        allowFontScaling={false}
+                                        color="rgba(0, 0, 0, 0.38)"
+                                        name="user"
+                                        size={25}
+                                        style={
+                                          Object {
+                                            "backgroundColor": "transparent",
+                                          }
+                                        }
+                                        testID="iconIcon"
+                                      >
+                                        <Text
+                                          allowFontScaling={false}
+                                          style={
+                                            Array [
+                                              Object {
+                                                "color": "rgba(0, 0, 0, 0.38)",
+                                                "fontSize": 25,
+                                              },
+                                              Object {
+                                                "backgroundColor": "transparent",
+                                              },
+                                              Object {
+                                                "fontFamily": "FontAwesome",
+                                                "fontStyle": "normal",
+                                                "fontWeight": "normal",
+                                              },
+                                              Object {},
+                                            ]
+                                          }
+                                          testID="iconIcon"
+                                        >
+                                          <Text
+                                            allowFontScaling={false}
+                                            style={
+                                              Array [
+                                                Object {
+                                                  "color": "rgba(0, 0, 0, 0.38)",
+                                                  "fontSize": 25,
+                                                },
+                                                Object {
+                                                  "backgroundColor": "transparent",
+                                                },
+                                                Object {
+                                                  "fontFamily": "FontAwesome",
+                                                  "fontStyle": "normal",
+                                                  "fontWeight": "normal",
+                                                },
+                                                Object {},
+                                              ]
+                                            }
+                                            testID="iconIcon"
+                                          >
+                                            
+                                          </Text>
+                                        </Text>
+                                      </Icon>
+                                    </View>
+                                  </View>
+                                </View>
+                              </View>
+                            </Icon>
+                          </Themed.Icon>
+                        </View>
+                      </View>
+                      <TextInput
+                        allowFontScaling={true}
+                        autoCapitalize="none"
+                        autoCorrect={false}
+                        autoFocus={false}
+                        keyboardAppearance="light"
+                        onChangeText={[Function]}
+                        placeholder="Name"
+                        rejectResponderTermination={true}
+                        returnKeyType="next"
+                        style={
+                          Object {
+                            "alignSelf": "center",
+                            "color": "black",
+                            "flex": 1,
+                            "fontSize": 18,
+                            "marginHorizontal": 20,
+                            "minHeight": 40,
+                          }
+                        }
+                        testID="RNE__Input__text-input"
+                        underlineColorAndroid="transparent"
+                        value=""
+                      >
+                        <TextInput
+                          allowFontScaling={true}
+                          autoCapitalize="none"
+                          autoCorrect={false}
+                          autoFocus={false}
+                          keyboardAppearance="light"
+                          onChangeText={[Function]}
+                          placeholder="Name"
+                          rejectResponderTermination={true}
+                          returnKeyType="next"
+                          style={
+                            Object {
+                              "alignSelf": "center",
+                              "color": "black",
+                              "flex": 1,
+                              "fontSize": 18,
+                              "marginHorizontal": 20,
+                              "minHeight": 40,
+                            }
+                          }
+                          testID="RNE__Input__text-input"
+                          underlineColorAndroid="transparent"
+                          value=""
+                        />
+                      </TextInput>
+                    </View>
+                  </View>
+                </AnimatedComponent>
+              </View>
+            </View>
+          </Input>
+        </ThemedComponent>
+      </ForwardRef(Themed.Input)>
+      <ForwardRef(Themed.Input)
+        autoCapitalize="none"
+        autoCorrect={false}
+        autoFocus={false}
+        containerStyle={
+          Object {
+            "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+          }
+        }
+        inputStyle={
+          Object {
+            "marginHorizontal": 20,
+          }
+        }
+        keyboardAppearance="light"
+        leftIcon={
+          <Themed.Icon
+            color="rgba(0, 0, 0, 0.38)"
+            name="building"
+            size={25}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+              }
+            }
+            type="font-awesome"
+          />
+        }
+        onChangeText={[Function]}
+        placeholder="Hotel Name"
+        returnKeyType="next"
+        value=""
+      >
+        <ThemedComponent
+          autoCapitalize="none"
+          autoCorrect={false}
+          autoFocus={false}
+          containerStyle={
+            Object {
+              "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+            }
+          }
+          forwardedRef={null}
+          inputStyle={
+            Object {
+              "marginHorizontal": 20,
+            }
+          }
+          keyboardAppearance="light"
+          leftIcon={
+            <Themed.Icon
+              color="rgba(0, 0, 0, 0.38)"
+              name="building"
+              size={25}
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                }
+              }
+              type="font-awesome"
+            />
+          }
+          onChangeText={[Function]}
+          placeholder="Hotel Name"
+          returnKeyType="next"
+          value=""
+        >
+          <Input
+            autoCapitalize="none"
+            autoCorrect={false}
+            autoFocus={false}
+            containerStyle={
+              Object {
+                "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+              }
+            }
+            inputStyle={
+              Object {
+                "marginHorizontal": 20,
+              }
+            }
+            keyboardAppearance="light"
+            leftIcon={
+              <Themed.Icon
+                color="rgba(0, 0, 0, 0.38)"
+                name="building"
+                size={25}
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                  }
+                }
+                type="font-awesome"
+              />
+            }
+            onChangeText={[Function]}
+            placeholder="Hotel Name"
+            returnKeyType="next"
+            theme={
+              Object {
+                "colors": Object {
+                  "disabled": "hsl(208, 8%, 90%)",
+                  "divider": "#bcbbc1",
+                  "error": "#ff190c",
+                  "grey0": "#393e42",
+                  "grey1": "#43484d",
+                  "grey2": "#5e6977",
+                  "grey3": "#86939e",
+                  "grey4": "#bdc6cf",
+                  "grey5": "#e1e8ee",
+                  "greyOutline": "#bbb",
+                  "platform": Object {
+                    "android": Object {
+                      "error": "#f44336",
+                      "primary": "#2196f3",
+                      "secondary": "#9C27B0",
+                      "success": "#4caf50",
+                      "warning": "#ffeb3b",
+                    },
+                    "ios": Object {
+                      "error": "#ff3b30",
+                      "primary": "#007aff",
+                      "secondary": "#5856d6",
+                      "success": "#4cd964",
+                      "warning": "#ffcc00",
+                    },
+                  },
+                  "primary": "#2089dc",
+                  "searchBg": "#303337",
+                  "secondary": "#8F0CE8",
+                  "success": "#52c41a",
+                  "warning": "#faad14",
+                },
+              }
+            }
+            value=""
+          >
+            <View
+              style={
+                Object {
+                  "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+                  "paddingHorizontal": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+                    "paddingHorizontal": 10,
+                    "width": "100%",
+                  }
+                }
+              >
+                <AnimatedComponent
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "borderBottomWidth": 1,
+                      "borderColor": "#86939e",
+                      "flexDirection": "row",
+                      "transform": Array [
+                        Object {
+                          "translateX": 0,
+                        },
+                      ],
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "borderBottomWidth": 1,
+                        "borderColor": "#86939e",
+                        "flexDirection": "row",
+                        "transform": Array [
+                          Object {
+                            "translateX": 0,
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "borderBottomWidth": 1,
+                          "borderColor": "#86939e",
+                          "flexDirection": "row",
+                          "transform": Array [
+                            Object {
+                              "translateX": 0,
+                            },
+                          ],
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "height": 40,
+                            "justifyContent": "center",
+                            "marginLeft": 15,
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            Object {
+                              "alignItems": "center",
+                              "height": 40,
+                              "justifyContent": "center",
+                              "marginLeft": 15,
+                            }
+                          }
+                        >
+                          <Themed.Icon
+                            color="rgba(0, 0, 0, 0.38)"
+                            name="building"
+                            size={25}
+                            style={
+                              Object {
+                                "backgroundColor": "transparent",
+                              }
+                            }
+                            type="font-awesome"
+                          >
+                            <Icon
+                              color="rgba(0, 0, 0, 0.38)"
+                              disabled={false}
+                              name="building"
+                              raised={false}
+                              reverse={false}
+                              reverseColor="white"
+                              size={25}
+                              style={
+                                Object {
+                                  "backgroundColor": "transparent",
+                                }
+                              }
+                              theme={
+                                Object {
+                                  "colors": Object {
+                                    "disabled": "hsl(208, 8%, 90%)",
+                                    "divider": "#bcbbc1",
+                                    "error": "#ff190c",
+                                    "grey0": "#393e42",
+                                    "grey1": "#43484d",
+                                    "grey2": "#5e6977",
+                                    "grey3": "#86939e",
+                                    "grey4": "#bdc6cf",
+                                    "grey5": "#e1e8ee",
+                                    "greyOutline": "#bbb",
+                                    "platform": Object {
+                                      "android": Object {
+                                        "error": "#f44336",
+                                        "primary": "#2196f3",
+                                        "secondary": "#9C27B0",
+                                        "success": "#4caf50",
+                                        "warning": "#ffeb3b",
+                                      },
+                                      "ios": Object {
+                                        "error": "#ff3b30",
+                                        "primary": "#007aff",
+                                        "secondary": "#5856d6",
+                                        "success": "#4cd964",
+                                        "warning": "#ffcc00",
+                                      },
+                                    },
+                                    "primary": "#2089dc",
+                                    "searchBg": "#303337",
+                                    "secondary": "#8F0CE8",
+                                    "success": "#52c41a",
+                                    "warning": "#faad14",
+                                  },
+                                }
+                              }
+                              type="font-awesome"
+                              underlayColor="white"
+                            >
+                              <View>
+                                <View>
+                                  <View
+                                    style={
+                                      Object {
+                                        "alignItems": "center",
+                                        "backgroundColor": "transparent",
+                                        "justifyContent": "center",
+                                      }
+                                    }
+                                    theme={
+                                      Object {
+                                        "colors": Object {
+                                          "disabled": "hsl(208, 8%, 90%)",
+                                          "divider": "#bcbbc1",
+                                          "error": "#ff190c",
+                                          "grey0": "#393e42",
+                                          "grey1": "#43484d",
+                                          "grey2": "#5e6977",
+                                          "grey3": "#86939e",
+                                          "grey4": "#bdc6cf",
+                                          "grey5": "#e1e8ee",
+                                          "greyOutline": "#bbb",
+                                          "platform": Object {
+                                            "android": Object {
+                                              "error": "#f44336",
+                                              "primary": "#2196f3",
+                                              "secondary": "#9C27B0",
+                                              "success": "#4caf50",
+                                              "warning": "#ffeb3b",
+                                            },
+                                            "ios": Object {
+                                              "error": "#ff3b30",
+                                              "primary": "#007aff",
+                                              "secondary": "#5856d6",
+                                              "success": "#4cd964",
+                                              "warning": "#ffcc00",
+                                            },
+                                          },
+                                          "primary": "#2089dc",
+                                          "searchBg": "#303337",
+                                          "secondary": "#8F0CE8",
+                                          "success": "#52c41a",
+                                          "warning": "#faad14",
+                                        },
+                                      }
+                                    }
+                                    underlayColor="white"
+                                  >
+                                    <View
+                                      style={
+                                        Object {
+                                          "alignItems": "center",
+                                          "backgroundColor": "transparent",
+                                          "justifyContent": "center",
+                                        }
+                                      }
+                                      theme={
+                                        Object {
+                                          "colors": Object {
+                                            "disabled": "hsl(208, 8%, 90%)",
+                                            "divider": "#bcbbc1",
+                                            "error": "#ff190c",
+                                            "grey0": "#393e42",
+                                            "grey1": "#43484d",
+                                            "grey2": "#5e6977",
+                                            "grey3": "#86939e",
+                                            "grey4": "#bdc6cf",
+                                            "grey5": "#e1e8ee",
+                                            "greyOutline": "#bbb",
+                                            "platform": Object {
+                                              "android": Object {
+                                                "error": "#f44336",
+                                                "primary": "#2196f3",
+                                                "secondary": "#9C27B0",
+                                                "success": "#4caf50",
+                                                "warning": "#ffeb3b",
+                                              },
+                                              "ios": Object {
+                                                "error": "#ff3b30",
+                                                "primary": "#007aff",
+                                                "secondary": "#5856d6",
+                                                "success": "#4cd964",
+                                                "warning": "#ffcc00",
+                                              },
+                                            },
+                                            "primary": "#2089dc",
+                                            "searchBg": "#303337",
+                                            "secondary": "#8F0CE8",
+                                            "success": "#52c41a",
+                                            "warning": "#faad14",
+                                          },
+                                        }
+                                      }
+                                      underlayColor="white"
+                                    >
+                                      <Icon
+                                        allowFontScaling={false}
+                                        color="rgba(0, 0, 0, 0.38)"
+                                        name="building"
+                                        size={25}
+                                        style={
+                                          Object {
+                                            "backgroundColor": "transparent",
+                                          }
+                                        }
+                                        testID="iconIcon"
+                                      >
+                                        <Text
+                                          allowFontScaling={false}
+                                          style={
+                                            Array [
+                                              Object {
+                                                "color": "rgba(0, 0, 0, 0.38)",
+                                                "fontSize": 25,
+                                              },
+                                              Object {
+                                                "backgroundColor": "transparent",
+                                              },
+                                              Object {
+                                                "fontFamily": "FontAwesome",
+                                                "fontStyle": "normal",
+                                                "fontWeight": "normal",
+                                              },
+                                              Object {},
+                                            ]
+                                          }
+                                          testID="iconIcon"
+                                        >
+                                          <Text
+                                            allowFontScaling={false}
+                                            style={
+                                              Array [
+                                                Object {
+                                                  "color": "rgba(0, 0, 0, 0.38)",
+                                                  "fontSize": 25,
+                                                },
+                                                Object {
+                                                  "backgroundColor": "transparent",
+                                                },
+                                                Object {
+                                                  "fontFamily": "FontAwesome",
+                                                  "fontStyle": "normal",
+                                                  "fontWeight": "normal",
+                                                },
+                                                Object {},
+                                              ]
+                                            }
+                                            testID="iconIcon"
+                                          >
+                                            
+                                          </Text>
+                                        </Text>
+                                      </Icon>
+                                    </View>
+                                  </View>
+                                </View>
+                              </View>
+                            </Icon>
+                          </Themed.Icon>
+                        </View>
+                      </View>
+                      <TextInput
+                        allowFontScaling={true}
+                        autoCapitalize="none"
+                        autoCorrect={false}
+                        autoFocus={false}
+                        keyboardAppearance="light"
+                        onChangeText={[Function]}
+                        placeholder="Hotel Name"
+                        rejectResponderTermination={true}
+                        returnKeyType="next"
+                        style={
+                          Object {
+                            "alignSelf": "center",
+                            "color": "black",
+                            "flex": 1,
+                            "fontSize": 18,
+                            "marginHorizontal": 20,
+                            "minHeight": 40,
+                          }
+                        }
+                        testID="RNE__Input__text-input"
+                        underlineColorAndroid="transparent"
+                        value=""
+                      >
+                        <TextInput
+                          allowFontScaling={true}
+                          autoCapitalize="none"
+                          autoCorrect={false}
+                          autoFocus={false}
+                          keyboardAppearance="light"
+                          onChangeText={[Function]}
+                          placeholder="Hotel Name"
+                          rejectResponderTermination={true}
+                          returnKeyType="next"
+                          style={
+                            Object {
+                              "alignSelf": "center",
+                              "color": "black",
+                              "flex": 1,
+                              "fontSize": 18,
+                              "marginHorizontal": 20,
+                              "minHeight": 40,
+                            }
+                          }
+                          testID="RNE__Input__text-input"
+                          underlineColorAndroid="transparent"
+                          value=""
+                        />
+                      </TextInput>
+                    </View>
+                  </View>
+                </AnimatedComponent>
+              </View>
+            </View>
+          </Input>
+        </ThemedComponent>
+      </ForwardRef(Themed.Input)>
+      <ForwardRef(Themed.Input)
+        autoCapitalize="none"
+        autoCorrect={false}
+        autoFocus={false}
+        containerStyle={
+          Object {
+            "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+          }
+        }
+        inputStyle={
+          Object {
+            "marginHorizontal": 20,
+          }
+        }
+        keyboardAppearance="light"
+        leftIcon={
+          <Themed.Icon
+            color="rgba(0, 0, 0, 0.38)"
+            name="calendar"
+            size={25}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+              }
+            }
+            type="font-awesome"
+          />
+        }
+        onChangeText={[Function]}
+        placeholder="Arrival Date"
+        returnKeyType="next"
+        value=""
+      >
+        <ThemedComponent
+          autoCapitalize="none"
+          autoCorrect={false}
+          autoFocus={false}
+          containerStyle={
+            Object {
+              "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+            }
+          }
+          forwardedRef={null}
+          inputStyle={
+            Object {
+              "marginHorizontal": 20,
+            }
+          }
+          keyboardAppearance="light"
+          leftIcon={
+            <Themed.Icon
+              color="rgba(0, 0, 0, 0.38)"
+              name="calendar"
+              size={25}
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                }
+              }
+              type="font-awesome"
+            />
+          }
+          onChangeText={[Function]}
+          placeholder="Arrival Date"
+          returnKeyType="next"
+          value=""
+        >
+          <Input
+            autoCapitalize="none"
+            autoCorrect={false}
+            autoFocus={false}
+            containerStyle={
+              Object {
+                "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+              }
+            }
+            inputStyle={
+              Object {
+                "marginHorizontal": 20,
+              }
+            }
+            keyboardAppearance="light"
+            leftIcon={
+              <Themed.Icon
+                color="rgba(0, 0, 0, 0.38)"
+                name="calendar"
+                size={25}
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                  }
+                }
+                type="font-awesome"
+              />
+            }
+            onChangeText={[Function]}
+            placeholder="Arrival Date"
+            returnKeyType="next"
+            theme={
+              Object {
+                "colors": Object {
+                  "disabled": "hsl(208, 8%, 90%)",
+                  "divider": "#bcbbc1",
+                  "error": "#ff190c",
+                  "grey0": "#393e42",
+                  "grey1": "#43484d",
+                  "grey2": "#5e6977",
+                  "grey3": "#86939e",
+                  "grey4": "#bdc6cf",
+                  "grey5": "#e1e8ee",
+                  "greyOutline": "#bbb",
+                  "platform": Object {
+                    "android": Object {
+                      "error": "#f44336",
+                      "primary": "#2196f3",
+                      "secondary": "#9C27B0",
+                      "success": "#4caf50",
+                      "warning": "#ffeb3b",
+                    },
+                    "ios": Object {
+                      "error": "#ff3b30",
+                      "primary": "#007aff",
+                      "secondary": "#5856d6",
+                      "success": "#4cd964",
+                      "warning": "#ffcc00",
+                    },
+                  },
+                  "primary": "#2089dc",
+                  "searchBg": "#303337",
+                  "secondary": "#8F0CE8",
+                  "success": "#52c41a",
+                  "warning": "#faad14",
+                },
+              }
+            }
+            value=""
+          >
+            <View
+              style={
+                Object {
+                  "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+                  "paddingHorizontal": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+                    "paddingHorizontal": 10,
+                    "width": "100%",
+                  }
+                }
+              >
+                <AnimatedComponent
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "borderBottomWidth": 1,
+                      "borderColor": "#86939e",
+                      "flexDirection": "row",
+                      "transform": Array [
+                        Object {
+                          "translateX": 0,
+                        },
+                      ],
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "borderBottomWidth": 1,
+                        "borderColor": "#86939e",
+                        "flexDirection": "row",
+                        "transform": Array [
+                          Object {
+                            "translateX": 0,
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "borderBottomWidth": 1,
+                          "borderColor": "#86939e",
+                          "flexDirection": "row",
+                          "transform": Array [
+                            Object {
+                              "translateX": 0,
+                            },
+                          ],
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "height": 40,
+                            "justifyContent": "center",
+                            "marginLeft": 15,
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            Object {
+                              "alignItems": "center",
+                              "height": 40,
+                              "justifyContent": "center",
+                              "marginLeft": 15,
+                            }
+                          }
+                        >
+                          <Themed.Icon
+                            color="rgba(0, 0, 0, 0.38)"
+                            name="calendar"
+                            size={25}
+                            style={
+                              Object {
+                                "backgroundColor": "transparent",
+                              }
+                            }
+                            type="font-awesome"
+                          >
+                            <Icon
+                              color="rgba(0, 0, 0, 0.38)"
+                              disabled={false}
+                              name="calendar"
+                              raised={false}
+                              reverse={false}
+                              reverseColor="white"
+                              size={25}
+                              style={
+                                Object {
+                                  "backgroundColor": "transparent",
+                                }
+                              }
+                              theme={
+                                Object {
+                                  "colors": Object {
+                                    "disabled": "hsl(208, 8%, 90%)",
+                                    "divider": "#bcbbc1",
+                                    "error": "#ff190c",
+                                    "grey0": "#393e42",
+                                    "grey1": "#43484d",
+                                    "grey2": "#5e6977",
+                                    "grey3": "#86939e",
+                                    "grey4": "#bdc6cf",
+                                    "grey5": "#e1e8ee",
+                                    "greyOutline": "#bbb",
+                                    "platform": Object {
+                                      "android": Object {
+                                        "error": "#f44336",
+                                        "primary": "#2196f3",
+                                        "secondary": "#9C27B0",
+                                        "success": "#4caf50",
+                                        "warning": "#ffeb3b",
+                                      },
+                                      "ios": Object {
+                                        "error": "#ff3b30",
+                                        "primary": "#007aff",
+                                        "secondary": "#5856d6",
+                                        "success": "#4cd964",
+                                        "warning": "#ffcc00",
+                                      },
+                                    },
+                                    "primary": "#2089dc",
+                                    "searchBg": "#303337",
+                                    "secondary": "#8F0CE8",
+                                    "success": "#52c41a",
+                                    "warning": "#faad14",
+                                  },
+                                }
+                              }
+                              type="font-awesome"
+                              underlayColor="white"
+                            >
+                              <View>
+                                <View>
+                                  <View
+                                    style={
+                                      Object {
+                                        "alignItems": "center",
+                                        "backgroundColor": "transparent",
+                                        "justifyContent": "center",
+                                      }
+                                    }
+                                    theme={
+                                      Object {
+                                        "colors": Object {
+                                          "disabled": "hsl(208, 8%, 90%)",
+                                          "divider": "#bcbbc1",
+                                          "error": "#ff190c",
+                                          "grey0": "#393e42",
+                                          "grey1": "#43484d",
+                                          "grey2": "#5e6977",
+                                          "grey3": "#86939e",
+                                          "grey4": "#bdc6cf",
+                                          "grey5": "#e1e8ee",
+                                          "greyOutline": "#bbb",
+                                          "platform": Object {
+                                            "android": Object {
+                                              "error": "#f44336",
+                                              "primary": "#2196f3",
+                                              "secondary": "#9C27B0",
+                                              "success": "#4caf50",
+                                              "warning": "#ffeb3b",
+                                            },
+                                            "ios": Object {
+                                              "error": "#ff3b30",
+                                              "primary": "#007aff",
+                                              "secondary": "#5856d6",
+                                              "success": "#4cd964",
+                                              "warning": "#ffcc00",
+                                            },
+                                          },
+                                          "primary": "#2089dc",
+                                          "searchBg": "#303337",
+                                          "secondary": "#8F0CE8",
+                                          "success": "#52c41a",
+                                          "warning": "#faad14",
+                                        },
+                                      }
+                                    }
+                                    underlayColor="white"
+                                  >
+                                    <View
+                                      style={
+                                        Object {
+                                          "alignItems": "center",
+                                          "backgroundColor": "transparent",
+                                          "justifyContent": "center",
+                                        }
+                                      }
+                                      theme={
+                                        Object {
+                                          "colors": Object {
+                                            "disabled": "hsl(208, 8%, 90%)",
+                                            "divider": "#bcbbc1",
+                                            "error": "#ff190c",
+                                            "grey0": "#393e42",
+                                            "grey1": "#43484d",
+                                            "grey2": "#5e6977",
+                                            "grey3": "#86939e",
+                                            "grey4": "#bdc6cf",
+                                            "grey5": "#e1e8ee",
+                                            "greyOutline": "#bbb",
+                                            "platform": Object {
+                                              "android": Object {
+                                                "error": "#f44336",
+                                                "primary": "#2196f3",
+                                                "secondary": "#9C27B0",
+                                                "success": "#4caf50",
+                                                "warning": "#ffeb3b",
+                                              },
+                                              "ios": Object {
+                                                "error": "#ff3b30",
+                                                "primary": "#007aff",
+                                                "secondary": "#5856d6",
+                                                "success": "#4cd964",
+                                                "warning": "#ffcc00",
+                                              },
+                                            },
+                                            "primary": "#2089dc",
+                                            "searchBg": "#303337",
+                                            "secondary": "#8F0CE8",
+                                            "success": "#52c41a",
+                                            "warning": "#faad14",
+                                          },
+                                        }
+                                      }
+                                      underlayColor="white"
+                                    >
+                                      <Icon
+                                        allowFontScaling={false}
+                                        color="rgba(0, 0, 0, 0.38)"
+                                        name="calendar"
+                                        size={25}
+                                        style={
+                                          Object {
+                                            "backgroundColor": "transparent",
+                                          }
+                                        }
+                                        testID="iconIcon"
+                                      >
+                                        <Text
+                                          allowFontScaling={false}
+                                          style={
+                                            Array [
+                                              Object {
+                                                "color": "rgba(0, 0, 0, 0.38)",
+                                                "fontSize": 25,
+                                              },
+                                              Object {
+                                                "backgroundColor": "transparent",
+                                              },
+                                              Object {
+                                                "fontFamily": "FontAwesome",
+                                                "fontStyle": "normal",
+                                                "fontWeight": "normal",
+                                              },
+                                              Object {},
+                                            ]
+                                          }
+                                          testID="iconIcon"
+                                        >
+                                          <Text
+                                            allowFontScaling={false}
+                                            style={
+                                              Array [
+                                                Object {
+                                                  "color": "rgba(0, 0, 0, 0.38)",
+                                                  "fontSize": 25,
+                                                },
+                                                Object {
+                                                  "backgroundColor": "transparent",
+                                                },
+                                                Object {
+                                                  "fontFamily": "FontAwesome",
+                                                  "fontStyle": "normal",
+                                                  "fontWeight": "normal",
+                                                },
+                                                Object {},
+                                              ]
+                                            }
+                                            testID="iconIcon"
+                                          >
+                                            
+                                          </Text>
+                                        </Text>
+                                      </Icon>
+                                    </View>
+                                  </View>
+                                </View>
+                              </View>
+                            </Icon>
+                          </Themed.Icon>
+                        </View>
+                      </View>
+                      <TextInput
+                        allowFontScaling={true}
+                        autoCapitalize="none"
+                        autoCorrect={false}
+                        autoFocus={false}
+                        keyboardAppearance="light"
+                        onChangeText={[Function]}
+                        placeholder="Arrival Date"
+                        rejectResponderTermination={true}
+                        returnKeyType="next"
+                        style={
+                          Object {
+                            "alignSelf": "center",
+                            "color": "black",
+                            "flex": 1,
+                            "fontSize": 18,
+                            "marginHorizontal": 20,
+                            "minHeight": 40,
+                          }
+                        }
+                        testID="RNE__Input__text-input"
+                        underlineColorAndroid="transparent"
+                        value=""
+                      >
+                        <TextInput
+                          allowFontScaling={true}
+                          autoCapitalize="none"
+                          autoCorrect={false}
+                          autoFocus={false}
+                          keyboardAppearance="light"
+                          onChangeText={[Function]}
+                          placeholder="Arrival Date"
+                          rejectResponderTermination={true}
+                          returnKeyType="next"
+                          style={
+                            Object {
+                              "alignSelf": "center",
+                              "color": "black",
+                              "flex": 1,
+                              "fontSize": 18,
+                              "marginHorizontal": 20,
+                              "minHeight": 40,
+                            }
+                          }
+                          testID="RNE__Input__text-input"
+                          underlineColorAndroid="transparent"
+                          value=""
+                        />
+                      </TextInput>
+                    </View>
+                  </View>
+                </AnimatedComponent>
+              </View>
+            </View>
+          </Input>
+        </ThemedComponent>
+      </ForwardRef(Themed.Input)>
+      <ForwardRef(Themed.Input)
+        autoCapitalize="none"
+        autoCorrect={false}
+        autoFocus={false}
+        containerStyle={
+          Object {
+            "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+          }
+        }
+        inputStyle={
+          Object {
+            "marginHorizontal": 20,
+          }
+        }
+        keyboardAppearance="light"
+        leftIcon={
+          <Themed.Icon
+            color="rgba(0, 0, 0, 0.38)"
+            name="calendar"
+            size={25}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+              }
+            }
+            type="font-awesome"
+          />
+        }
+        onChangeText={[Function]}
+        placeholder="Departure Date"
+        returnKeyType="next"
+        value=""
+      >
+        <ThemedComponent
+          autoCapitalize="none"
+          autoCorrect={false}
+          autoFocus={false}
+          containerStyle={
+            Object {
+              "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+            }
+          }
+          forwardedRef={null}
+          inputStyle={
+            Object {
+              "marginHorizontal": 20,
+            }
+          }
+          keyboardAppearance="light"
+          leftIcon={
+            <Themed.Icon
+              color="rgba(0, 0, 0, 0.38)"
+              name="calendar"
+              size={25}
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                }
+              }
+              type="font-awesome"
+            />
+          }
+          onChangeText={[Function]}
+          placeholder="Departure Date"
+          returnKeyType="next"
+          value=""
+        >
+          <Input
+            autoCapitalize="none"
+            autoCorrect={false}
+            autoFocus={false}
+            containerStyle={
+              Object {
+                "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+              }
+            }
+            inputStyle={
+              Object {
+                "marginHorizontal": 20,
+              }
+            }
+            keyboardAppearance="light"
+            leftIcon={
+              <Themed.Icon
+                color="rgba(0, 0, 0, 0.38)"
+                name="calendar"
+                size={25}
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                  }
+                }
+                type="font-awesome"
+              />
+            }
+            onChangeText={[Function]}
+            placeholder="Departure Date"
+            returnKeyType="next"
+            theme={
+              Object {
+                "colors": Object {
+                  "disabled": "hsl(208, 8%, 90%)",
+                  "divider": "#bcbbc1",
+                  "error": "#ff190c",
+                  "grey0": "#393e42",
+                  "grey1": "#43484d",
+                  "grey2": "#5e6977",
+                  "grey3": "#86939e",
+                  "grey4": "#bdc6cf",
+                  "grey5": "#e1e8ee",
+                  "greyOutline": "#bbb",
+                  "platform": Object {
+                    "android": Object {
+                      "error": "#f44336",
+                      "primary": "#2196f3",
+                      "secondary": "#9C27B0",
+                      "success": "#4caf50",
+                      "warning": "#ffeb3b",
+                    },
+                    "ios": Object {
+                      "error": "#ff3b30",
+                      "primary": "#007aff",
+                      "secondary": "#5856d6",
+                      "success": "#4cd964",
+                      "warning": "#ffcc00",
+                    },
+                  },
+                  "primary": "#2089dc",
+                  "searchBg": "#303337",
+                  "secondary": "#8F0CE8",
+                  "success": "#52c41a",
+                  "warning": "#faad14",
+                },
+              }
+            }
+            value=""
+          >
+            <View
+              style={
+                Object {
+                  "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+                  "paddingHorizontal": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "borderBottomColor": "rgba(0, 0, 0, 0.38)",
+                    "paddingHorizontal": 10,
+                    "width": "100%",
+                  }
+                }
+              >
+                <AnimatedComponent
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "borderBottomWidth": 1,
+                      "borderColor": "#86939e",
+                      "flexDirection": "row",
+                      "transform": Array [
+                        Object {
+                          "translateX": 0,
+                        },
+                      ],
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "borderBottomWidth": 1,
+                        "borderColor": "#86939e",
+                        "flexDirection": "row",
+                        "transform": Array [
+                          Object {
+                            "translateX": 0,
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "borderBottomWidth": 1,
+                          "borderColor": "#86939e",
+                          "flexDirection": "row",
+                          "transform": Array [
+                            Object {
+                              "translateX": 0,
+                            },
+                          ],
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "height": 40,
+                            "justifyContent": "center",
+                            "marginLeft": 15,
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            Object {
+                              "alignItems": "center",
+                              "height": 40,
+                              "justifyContent": "center",
+                              "marginLeft": 15,
+                            }
+                          }
+                        >
+                          <Themed.Icon
+                            color="rgba(0, 0, 0, 0.38)"
+                            name="calendar"
+                            size={25}
+                            style={
+                              Object {
+                                "backgroundColor": "transparent",
+                              }
+                            }
+                            type="font-awesome"
+                          >
+                            <Icon
+                              color="rgba(0, 0, 0, 0.38)"
+                              disabled={false}
+                              name="calendar"
+                              raised={false}
+                              reverse={false}
+                              reverseColor="white"
+                              size={25}
+                              style={
+                                Object {
+                                  "backgroundColor": "transparent",
+                                }
+                              }
+                              theme={
+                                Object {
+                                  "colors": Object {
+                                    "disabled": "hsl(208, 8%, 90%)",
+                                    "divider": "#bcbbc1",
+                                    "error": "#ff190c",
+                                    "grey0": "#393e42",
+                                    "grey1": "#43484d",
+                                    "grey2": "#5e6977",
+                                    "grey3": "#86939e",
+                                    "grey4": "#bdc6cf",
+                                    "grey5": "#e1e8ee",
+                                    "greyOutline": "#bbb",
+                                    "platform": Object {
+                                      "android": Object {
+                                        "error": "#f44336",
+                                        "primary": "#2196f3",
+                                        "secondary": "#9C27B0",
+                                        "success": "#4caf50",
+                                        "warning": "#ffeb3b",
+                                      },
+                                      "ios": Object {
+                                        "error": "#ff3b30",
+                                        "primary": "#007aff",
+                                        "secondary": "#5856d6",
+                                        "success": "#4cd964",
+                                        "warning": "#ffcc00",
+                                      },
+                                    },
+                                    "primary": "#2089dc",
+                                    "searchBg": "#303337",
+                                    "secondary": "#8F0CE8",
+                                    "success": "#52c41a",
+                                    "warning": "#faad14",
+                                  },
+                                }
+                              }
+                              type="font-awesome"
+                              underlayColor="white"
+                            >
+                              <View>
+                                <View>
+                                  <View
+                                    style={
+                                      Object {
+                                        "alignItems": "center",
+                                        "backgroundColor": "transparent",
+                                        "justifyContent": "center",
+                                      }
+                                    }
+                                    theme={
+                                      Object {
+                                        "colors": Object {
+                                          "disabled": "hsl(208, 8%, 90%)",
+                                          "divider": "#bcbbc1",
+                                          "error": "#ff190c",
+                                          "grey0": "#393e42",
+                                          "grey1": "#43484d",
+                                          "grey2": "#5e6977",
+                                          "grey3": "#86939e",
+                                          "grey4": "#bdc6cf",
+                                          "grey5": "#e1e8ee",
+                                          "greyOutline": "#bbb",
+                                          "platform": Object {
+                                            "android": Object {
+                                              "error": "#f44336",
+                                              "primary": "#2196f3",
+                                              "secondary": "#9C27B0",
+                                              "success": "#4caf50",
+                                              "warning": "#ffeb3b",
+                                            },
+                                            "ios": Object {
+                                              "error": "#ff3b30",
+                                              "primary": "#007aff",
+                                              "secondary": "#5856d6",
+                                              "success": "#4cd964",
+                                              "warning": "#ffcc00",
+                                            },
+                                          },
+                                          "primary": "#2089dc",
+                                          "searchBg": "#303337",
+                                          "secondary": "#8F0CE8",
+                                          "success": "#52c41a",
+                                          "warning": "#faad14",
+                                        },
+                                      }
+                                    }
+                                    underlayColor="white"
+                                  >
+                                    <View
+                                      style={
+                                        Object {
+                                          "alignItems": "center",
+                                          "backgroundColor": "transparent",
+                                          "justifyContent": "center",
+                                        }
+                                      }
+                                      theme={
+                                        Object {
+                                          "colors": Object {
+                                            "disabled": "hsl(208, 8%, 90%)",
+                                            "divider": "#bcbbc1",
+                                            "error": "#ff190c",
+                                            "grey0": "#393e42",
+                                            "grey1": "#43484d",
+                                            "grey2": "#5e6977",
+                                            "grey3": "#86939e",
+                                            "grey4": "#bdc6cf",
+                                            "grey5": "#e1e8ee",
+                                            "greyOutline": "#bbb",
+                                            "platform": Object {
+                                              "android": Object {
+                                                "error": "#f44336",
+                                                "primary": "#2196f3",
+                                                "secondary": "#9C27B0",
+                                                "success": "#4caf50",
+                                                "warning": "#ffeb3b",
+                                              },
+                                              "ios": Object {
+                                                "error": "#ff3b30",
+                                                "primary": "#007aff",
+                                                "secondary": "#5856d6",
+                                                "success": "#4cd964",
+                                                "warning": "#ffcc00",
+                                              },
+                                            },
+                                            "primary": "#2089dc",
+                                            "searchBg": "#303337",
+                                            "secondary": "#8F0CE8",
+                                            "success": "#52c41a",
+                                            "warning": "#faad14",
+                                          },
+                                        }
+                                      }
+                                      underlayColor="white"
+                                    >
+                                      <Icon
+                                        allowFontScaling={false}
+                                        color="rgba(0, 0, 0, 0.38)"
+                                        name="calendar"
+                                        size={25}
+                                        style={
+                                          Object {
+                                            "backgroundColor": "transparent",
+                                          }
+                                        }
+                                        testID="iconIcon"
+                                      >
+                                        <Text
+                                          allowFontScaling={false}
+                                          style={
+                                            Array [
+                                              Object {
+                                                "color": "rgba(0, 0, 0, 0.38)",
+                                                "fontSize": 25,
+                                              },
+                                              Object {
+                                                "backgroundColor": "transparent",
+                                              },
+                                              Object {
+                                                "fontFamily": "FontAwesome",
+                                                "fontStyle": "normal",
+                                                "fontWeight": "normal",
+                                              },
+                                              Object {},
+                                            ]
+                                          }
+                                          testID="iconIcon"
+                                        >
+                                          <Text
+                                            allowFontScaling={false}
+                                            style={
+                                              Array [
+                                                Object {
+                                                  "color": "rgba(0, 0, 0, 0.38)",
+                                                  "fontSize": 25,
+                                                },
+                                                Object {
+                                                  "backgroundColor": "transparent",
+                                                },
+                                                Object {
+                                                  "fontFamily": "FontAwesome",
+                                                  "fontStyle": "normal",
+                                                  "fontWeight": "normal",
+                                                },
+                                                Object {},
+                                              ]
+                                            }
+                                            testID="iconIcon"
+                                          >
+                                            
+                                          </Text>
+                                        </Text>
+                                      </Icon>
+                                    </View>
+                                  </View>
+                                </View>
+                              </View>
+                            </Icon>
+                          </Themed.Icon>
+                        </View>
+                      </View>
+                      <TextInput
+                        allowFontScaling={true}
+                        autoCapitalize="none"
+                        autoCorrect={false}
+                        autoFocus={false}
+                        keyboardAppearance="light"
+                        onChangeText={[Function]}
+                        placeholder="Departure Date"
+                        rejectResponderTermination={true}
+                        returnKeyType="next"
+                        style={
+                          Object {
+                            "alignSelf": "center",
+                            "color": "black",
+                            "flex": 1,
+                            "fontSize": 18,
+                            "marginHorizontal": 20,
+                            "minHeight": 40,
+                          }
+                        }
+                        testID="RNE__Input__text-input"
+                        underlineColorAndroid="transparent"
+                        value=""
+                      >
+                        <TextInput
+                          allowFontScaling={true}
+                          autoCapitalize="none"
+                          autoCorrect={false}
+                          autoFocus={false}
+                          keyboardAppearance="light"
+                          onChangeText={[Function]}
+                          placeholder="Departure Date"
+                          rejectResponderTermination={true}
+                          returnKeyType="next"
+                          style={
+                            Object {
+                              "alignSelf": "center",
+                              "color": "black",
+                              "flex": 1,
+                              "fontSize": 18,
+                              "marginHorizontal": 20,
+                              "minHeight": 40,
+                            }
+                          }
+                          testID="RNE__Input__text-input"
+                          underlineColorAndroid="transparent"
+                          value=""
+                        />
+                      </TextInput>
+                    </View>
+                  </View>
+                </AnimatedComponent>
+              </View>
+            </View>
+          </Input>
+        </ThemedComponent>
+      </ForwardRef(Themed.Input)>
+      <Button
+        onPress={[Function]}
+        title="Make Reservation"
+      >
+        <TouchableOpacity
+          accessibilityRole="button"
+          accessibilityStates={Array []}
+          activeOpacity={0.2}
+          onPress={[Function]}
+        >
+          <AnimatedComponent
+            accessibilityRole="button"
+            accessibilityStates={Array []}
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                undefined,
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <View
+              accessibilityRole="button"
+              accessibilityStates={Array []}
+              accessible={true}
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                accessibilityRole="button"
+                accessibilityStates={Array []}
+                accessible={true}
+                isTVSelectable={true}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "opacity": 1,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {},
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {},
+                      ]
+                    }
+                  >
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#007AFF",
+                            "fontSize": 18,
+                            "padding": 8,
+                            "textAlign": "center",
+                          },
+                        ]
+                      }
+                    >
+                      <Text
+                        style={
+                          Array [
+                            Object {
+                              "color": "#007AFF",
+                              "fontSize": 18,
+                              "padding": 8,
+                              "textAlign": "center",
+                            },
+                          ]
+                        }
+                      >
+                        Make Reservation
+                      </Text>
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </AnimatedComponent>
+        </TouchableOpacity>
+      </Button>
+    </View>
+  </View>
+</ReservationEntry>
+`;

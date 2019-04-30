@@ -1,12 +1,12 @@
-import { FETCH_NEW_RESERVATION } from '../query/fetchNewReservation'
+import { FETCH_NEW_RESERVATION_QUERY } from '../query/fetchNewReservation'
 export const resolvers = {
     Mutation: {
-        updateNewReservation: ((_, newReservation, { cache })) => {
-    const data = cache.readQuery({ query: FETCH_NEW_RESERVATION })
-    const updatedReservation = { ...data.newReservation, ...newReservation.data }
-    cache.writeQuery({ query: FETCH_NEW_RESERVATION, data: { newReservation: updatedReservation } })
-    return null;
-},
+        updateNewReservation: (_, newReservation: any, { cache }: { cache: any }) => {
+            const data = cache.readQuery({ query: FETCH_NEW_RESERVATION_QUERY })
+            const updatedReservation = { ...data.fetchNewReservation, ...newReservation.data }
+            cache.writeQuery({ query: FETCH_NEW_RESERVATION_QUERY, data: { fetchNewReservation: updatedReservation } })
+            return null;
+        },
     },
 };
 

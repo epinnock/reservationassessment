@@ -10,3 +10,4 @@ query getReservations($skip: Int, $first: Int, $orderBy: ReservationOrderByInput
     departureDate
   }
 }`
+

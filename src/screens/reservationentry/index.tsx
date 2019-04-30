@@ -4,22 +4,29 @@ import withCreateReservationHOC, { withCreateReservationProps } from './graphql/
 import { NavigationInjectedProps } from 'react-navigation'
 import { compose } from 'react-apollo';
 import { Input, Icon } from 'react-native-elements';
-export interface Props extends withCreateReservationProps, NavigationInjectedProps { }
+import withFetchNewReservationHOC, { withNewReservationQueryProps } from './graphql/hoc/withfetchnewreservation';
+import withUpdateNewReservationHOC, { withUpdateNewReservationMutationProps } from './graphql/hoc/withupdatenewreservation'
+import { NewReservationUpdateInput } from '../../types/graphql-global-types';
+import newReservation from './graphql/default/newreservation';
 
-class NewReservation extends PureComponent<Props>{
+export interface Props extends withCreateReservationProps, NavigationInjectedProps, withNewReservationQueryProps, withUpdateNewReservationMutationProps { }
+
+export class ReservationEntry extends PureComponent<Props>{
     constructor(props: Readonly<Props>) {
         super(props);
-        this.state = {
-            name: '',
-            hotelName: '',
-            arrivalDate: '',
-            departureDate: '',
 
-        }
     }
 
     createReservation = async () => {
-        const { name, hotelName, arrivalDate, departureDate } = this.state;
+
+        const {
+            newReservationQuery: {
+                fetchNewReservation
+            },
+
+        } = this.props
+
+        const { name, hotelName, arrivalDate, departureDate } = fetchNewReservation!
 
         await this.props.createReservation({
             variables: {
@@ -33,19 +40,77 @@ class NewReservation extends PureComponent<Props>{
         });
 
 
-        this.setState({
+        this.clear();
+        this.props.navigation.goBack();
+    }
+
+    clear = async () => {
+
+        this.updateNewReservation({
             name: '',
             hotelName: '',
             arrivalDate: '',
             departureDate: ''
-        });
-        this.props.navigation.goBack();
+        })
+    }
+
+    componentWillUnmount() {
+        this.clear();
+    }
+
+    initialUpdate() {
+        const {
+            updateNewReservationMutation
+        } = this.props;
+        const data = {
+            id: '',
+            name: '',
+            hotelName: '',
+            arrivalDate: '',
+            departureDate: ''
+        }
+        updateNewReservationMutation({ variables: { data } })
+    }
+
+    updateNewReservation = (fields: Partial<NewReservationUpdateInput>) => {
+        const {
+            newReservationQuery: {
+                fetchNewReservation
+            },
+            updateNewReservationMutation
+        } = this.props;
+
+        const { id, name,
+            hotelName,
+            arrivalDate,
+            departureDate } = fetchNewReservation!
+        const data = { id, name, hotelName, arrivalDate, departureDate, ...fields }
+        updateNewReservationMutation({ variables: { data } })
     }
 
 
+    loadingView = () => <View><Text>Loading...</Text></View>
 
     render() {
-        const { name, hotelName, arrivalDate, departureDate } = this.state;
+
+        const {
+            newReservationQuery: {
+
+                loading,
+                fetchNewReservation
+            }
+        } = this.props
+        if (loading) {
+            return this.loadingView()
+        }
+        if (!fetchNewReservation) {
+            this.initialUpdate();
+            return this.loadingView();
+        }
+
+
+        const { name, hotelName, arrivalDate, departureDate } = fetchNewReservation!
+        //const { name, hotelName, arrivalDate, departureDate } = this.state return this.loadingView()
         return (<View style={styles.container}>
 
 
@@ -71,7 +136,7 @@ class NewReservation extends PureComponent<Props>{
                 containerStyle={{
                     borderBottomColor: 'rgba(0, 0, 0, 0.38)',
                 }}
-                onChangeText={(input) => this.setState({ name: input })}
+                onChangeText={(input) => this.updateNewReservation({ name: input })}
 
             />
 
@@ -99,7 +164,7 @@ class NewReservation extends PureComponent<Props>{
                 containerStyle={{
                     borderBottomColor: 'rgba(0, 0, 0, 0.38)',
                 }}
-                onChangeText={(input) => this.setState({ hotelName: input })}
+                onChangeText={(input) => this.updateNewReservation({ hotelName: input })}
 
             />
 
@@ -124,7 +189,7 @@ class NewReservation extends PureComponent<Props>{
                 containerStyle={{
                     borderBottomColor: 'rgba(0, 0, 0, 0.38)',
                 }}
-                onChangeText={(input) => this.setState({ arrivalDate: input })}
+                onChangeText={(input) => this.updateNewReservation({ arrivalDate: input })}
 
             />
 
@@ -150,7 +215,7 @@ class NewReservation extends PureComponent<Props>{
                 containerStyle={{
                     borderBottomColor: 'rgba(0, 0, 0, 0.38)',
                 }}
-                onChangeText={(input) => this.setState({ departureDate: input })}
+                onChangeText={(input) => this.updateNewReservation({ departureDate: input })}
 
             />
 
@@ -181,4 +246,4 @@ const styles = StyleSheet.create({
 })
 
 
-export default compose(withCreateReservationHOC)(NewReservation)
+export default compose(withFetchNewReservationHOC, withCreateReservationHOC, withUpdateNewReservationHOC)(ReservationEntry)

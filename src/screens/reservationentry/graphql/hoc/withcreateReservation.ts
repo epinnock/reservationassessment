@@ -14,24 +14,22 @@ type Response = createReservation_createReservation
 export default graphql<{}, Response, {}, withCreateReservationProps>(CREATE_RESERVATION, {
     name: 'createReservation',
     options: {
-        refetchQueries: [{
-            query: QUERY_RESERVATIONS,
-            variables: defaultVariables
-        }],
+
         update: (cache, { data: { createReservation, } }) => {
+            const variables = { skip: 0, first: 15, orderBy: 'createdAt_DESC' }
             try {
                 const data = cache.readQuery({
                     query: QUERY_RESERVATIONS,
-                    variables: defaultVariables
+                    variables
                 })
                 const reservations = data ? data.reservations : []
                 cache.writeQuery({
                     query: QUERY_RESERVATIONS,
-                    variables: defaultVariables,
+                    variables,
                     data: { reservations: [...reservations, createReservation] }
                 })
             } catch (err) {
-
+                err;
             }
         }
 

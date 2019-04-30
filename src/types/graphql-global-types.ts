@@ -27,6 +27,7 @@ export interface NewReservationUpdateInput {
   id: string;
   name: string;
   hotelName: string;
+  arrivalDate: string;
   departureDate: string;
 }
 
