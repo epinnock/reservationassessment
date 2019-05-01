@@ -1,5 +1,5 @@
 import React from 'react'
-import { GestureResponderEvent } from 'react-native'
+import { GestureResponderEvent, Button } from 'react-native'
 import { mount } from 'enzyme'
 import { NavigationScreenProp, NavigationRoute, NavigationParams } from 'react-navigation'
 import { ReservationEntry, Props } from '../index'
@@ -65,6 +65,19 @@ describe('ReservationEnry tests', () => {
 
     });
 
+    it('call createReservationMutation', async () => {
+        const createReservation = jest.fn()
+        const wrapper = mount(<ReservationEntry {...props} navigation={{ ...props.navigation, goBack: jest.fn() }} createReservation={createReservation} />);
+        await wrapper
+            .find(Button)
+            .at(0)
+            .prop('onPress')!({} as GestureResponderEvent)
+        expect(createReservation).toBeCalled()
+
+
+    })
+
 
 
 });
+

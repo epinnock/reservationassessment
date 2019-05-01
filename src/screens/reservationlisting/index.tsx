@@ -5,7 +5,7 @@ import withReservations, { ReservationChildProps } from './graphql/hoc/withreser
 import Reservation from './components/reservation';
 
 export interface Props extends ReservationChildProps, NavigationInjectedProps { }
-class ReservationListings extends PureComponent<Props>{
+export class ReservationListings extends PureComponent<Props>{
 
     render() {
         const { error, reservations } = this.props.data;
